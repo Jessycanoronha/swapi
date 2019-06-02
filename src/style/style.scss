@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo');
 $desktop: 860px;
 $tablet: 620px;
 
@@ -22,6 +23,11 @@ body{
 	height: 100vh;
 }
 
+.logo{
+	height: 13vh;
+	display: block;
+	margin: 5vh auto;
+}
 .image1{
 	height:80vh;
 	display: block;

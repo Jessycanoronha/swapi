@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-	
+import HeroImage from './hero-image.js';	
 
 export default class App extends Component {
 
@@ -15,8 +15,16 @@ componentDidMount() {
     return (
       <div className="app-main">
 
-		<img className="image1" src="src/assets/starwars-620x620.png" alt="logo" />
-
+<img className="menu-icon" src="src/assets/PowderBlueMenuIcon.png" alt="Menu icon" />
+		<div className="menu-body-div">
+			<div className="english-menu">
+				english stuff
+			</div>
+			<div className="aurebesh-menu">
+				aurebesh stuff
+			</div>
+		</div>
+		{this.props.children}
       </div>
     );
   }
