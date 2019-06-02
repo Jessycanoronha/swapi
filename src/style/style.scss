@@ -2,6 +2,11 @@
 $desktop: 860px;
 $tablet: 620px;
 
+@font-face{
+	font-family: "Aurebesh";
+	src: url('../src/assets/aurebesh/Aurebesh Bold.ttf');
+}
+
 *{
 	margin:0;
 	padding:0;
@@ -21,13 +26,66 @@ body{
 
 .app-main{
 	height: 100vh;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.menu-icon{
+	position: absolute;
+	left: 1em;
+	top: 1em;
+	height: 2em;
+	width: auto;
+	z-index: 2;
+}
+
+.menu-body-div{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+.english-menu, .aurebesh-menu{
+	box-sizing: border-box;
+	padding: 0;
+	text-overflow: ellipsis;
+	whitespace: nowrap;
+	overflow: hidden;
+	z-index: 3;
+	position: absolute;
+	top: 5em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.english-menu{
+	display: none;
+	font-family: Baloo, arial;
+	background: ghostwhite;
+}
+
+.aurebesh-menu{
+	display: none;
+	font-family: 'Aurebesh';
+	width: 100%;
+	background: ghostwhite;	
+}
+
+@media only screen and (min-width: 620px){
+
 }
 
 .logo{
 	height: 13vh;
 	display: block;
-	margin: 5vh auto;
+	left: 50%;
+	top: 5vh;
+	transform: translate(-50%, 0);
+	position: fixed;
 }
+
 .image1{
 	height:80vh;
 	display: block;
@@ -36,5 +94,4 @@ body{
 	left: 50%;
 	transform: translate(-50%, 0);
 	/*flex: 0 1;*/
-
-} 
+}

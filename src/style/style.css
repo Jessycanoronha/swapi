@@ -1,78 +1,80 @@
-
 @import url("https://fonts.googleapis.com/css?family=Baloo");
 @font-face {
   font-family: "Aurebesh";
   src: url("../src/assets/aurebesh/Aurebesh Bold.ttf"); }
-
 * {
-    margin: 0;
-    padding: 0; }
-  
-  body {
-    background: -webkit-linear-gradient(left, white 50%, black 50%);
-    background: -o-linear-gradient(left, white 50%, black 50%);
-    background: linear-gradient(to right, white 50%, black 50%);
-    /*display: flex;
-    align-content: flex-start;
-    justify-content: center;*/
-    height: 100vh;
-    width: 100vw;
-    position: relative; }
-  
-  .app-main {
-    height: 100vh;
-    height: 100vh;
-    padding: 0;
-	  box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0; }
 
-.menu-icon{
-	position: absolute;
-	left: 1em;
-	top: 1em;
-	height: 2em;
-	width: auto;
-	z-index: 2;
-}
+body {
+  background: -webkit-linear-gradient(left, white 50%, black 50%);
+  background: -o-linear-gradient(left, white 50%, black 50%);
+  background: linear-gradient(to right, white 50%, black 50%);
+  /*display: flex;
+  align-content: flex-start;
+  justify-content: center;*/
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
 
+.app-main {
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box; }
 
-.english-menu{
-	box-sizing: border-box;
-	padding: 2em 1em;
-	text-overflow: ellipsis;
-	whitespace: nowrap;
-	overflow: hidden;
-	z-index: 3;
-	position: absolute;
-	top: 5em;
-	bottom: 0;
-	text-align: center;
-}
+.menu-icon {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  height: 2em;
+  width: auto;
+  z-index: 2; }
 
-.english-menu{
-	display: none;
-	font-family: Baloo, arial;
-	width: 100%;
-	background: ghostwhite;
-}
+.menu-body-div {
+  display: flex;
+  width: 100vw;
+  height: 100vh; }
 
-  
-  .logo {
-      height: 13vh;
-      display: block;
-      left: 50%;
-      top: 5vh;
-      transform: translate(-50%, 0);
-      position: fixed;}
-      
-      
-  .image1 {
-    height: 80vh;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    /*flex: 0 1;*/ }
-  
-  /*# sourceMappingURL=style.css.map */
+.english-menu, .aurebesh-menu {
+  box-sizing: border-box;
+  padding: 0;
+  text-overflow: ellipsis;
+  whitespace: nowrap;
+  overflow: hidden;
+  z-index: 3;
+  position: absolute;
+  top: 5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.english-menu {
+  display: none;
+  font-family: Baloo, arial;
+  background: ghostwhite; }
+
+.aurebesh-menu {
+  display: none;
+  font-family: 'Aurebesh';
+  width: 100%;
+  background: ghostwhite; }
+
+.logo {
+  height: 13vh;
+  display: block;
+  left: 50%;
+  top: 5vh;
+  transform: translate(-50%, 0);
+  position: fixed; }
+
+.image1 {
+  height: 80vh;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /*flex: 0 1;*/ }
+
+/*# sourceMappingURL=style.css.map */
