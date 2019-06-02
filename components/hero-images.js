@@ -12,7 +12,10 @@ componentDidMount() {
 
   render() {
     return (
-		<img className="image1" src="src/assets/starwars-620x620.png" alt="star wars" />
+		<div className="hero">
+    		<img className="logo" src="src/assets/StarWarsLogo.png" alt="star wars logo" />
+			<img className="image1" src="src/assets/starwars-620x620.png" alt="Yoda" />
+		</div>
     );
   }
 }
